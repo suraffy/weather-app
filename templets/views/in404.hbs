@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>404</title>
+        <link rel="icon" href="/img/icon_bar.png">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+    </head>
+
+    <body>
+        <div class="main-content">
+
+            {{>header}}
+            <div class="body in404">
+                <h2>{{title}}</h2>
+
+                <div class="in404_cont">
+                    <img src="/img/unknown_weather.png">
+                    <p style="font-size: 20px;">{{errorMessage}}</p>
+                </div>
+            </div>
+
+        </div>
+        
+        {{>footer}}
+    </body>
+</html>

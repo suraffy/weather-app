@@ -1,0 +1,257 @@
+body {
+    max-width: 750px;
+    margin: 0 auto;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.main-content {
+    flex-grow: 1;
+}
+
+
+img {
+    width: 250px;
+}
+
+
+
+/* Styling the about page */
+.about_me {
+    width: 40%;
+    float: left;
+}
+.about_me p {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-right: 20%;
+}
+
+.contact_me {
+    width: 50%;
+    margin: 0 auto;
+}
+.contact_me .el {
+    font-size: 16px;
+    padding-bottom: 8px;
+}
+.contact_me .el a {
+    text-decoration: none;
+}
+.contact_me .el a:hover {
+    text-decoration: underline;
+}
+
+#aboutMeImg {
+    width: 250px;
+}
+
+
+
+
+
+
+header {
+    background-color: rgb(167, 234, 255);
+    background-image: url('/img/header_bg.png');
+    padding: 0 10px;
+}
+
+header h1 {
+    float: left;
+    font-size: 64px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+nav {
+    display: block;
+    clear: both;
+    margin-left: 5px;
+    padding-bottom: 5px;
+}
+
+header a {
+    text-decoration: none;
+    color: #888;
+    margin-right: 15px;
+    transition: color 0.4s;
+}
+
+header a:hover {
+    color: #333;
+}
+
+header a:active {
+    color: #eee;
+}
+
+
+
+.body {
+    margin: 10px;
+}
+
+
+
+h2 {
+    color: #555;
+}
+
+
+
+
+
+footer {
+    color:#333;
+    background-color: rgb(167, 234, 255);
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+footer p {
+    text-align: center;
+}
+
+/* .in404 {
+    text-align: center;
+} */
+
+form {
+    width: 65%;
+    text-align: center;
+}
+
+input {
+    font-size: 110%;
+    border: 1px solid #eee;
+    padding: 10px;
+    outline: none;
+}
+
+button {
+    font-size: 110%;
+    cursor: pointer;
+    border: 1px solid #eee;
+    background-color: #eeee;
+    padding: 10px 30px;
+    outline: none;
+}
+
+
+.result {
+    width: 65%;
+    margin-top: 25px;
+    float: left;
+}
+
+.result p {
+    margin: 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+#temperature {
+    font-size: 72px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+#description {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+#location {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.weather-icon {
+    width: 200px;
+    float: left;
+    margin-top: -20px;
+    margin-left: -160px;
+}
+
+
+
+
+
+
+
+.in404_cont {
+    width: 65%;
+}
+
+.in404_cont img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.in404_cont p {
+    text-align: center;  
+}
+
+
+img[src="/img/unknown_weather.png"] {
+    width: 140px;
+    margin-top: 20px;
+}   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styling the loading */
+
+
+.desc_loading p {
+    font-size: 20px;
+    text-align: center;
+}
+  
+  
+  /* loading dots */
+  
+  .desc_loading:after {
+    content: ' .';
+    animation: dots 2s steps(5, end) infinite;}
+  
+  @keyframes dots {
+    0%, 20% {
+      color: rgba(0,0,0,0);
+      text-shadow:
+        .25em 0 0 rgba(0,0,0,0),
+        .5em 0 0 rgba(0,0,0,0);}
+    40% {
+      color: #000;
+      text-shadow:
+        .25em 0 0 rgba(0,0,0,0),
+        .5em 0 0 rgba(0,0,0,0);}
+    60% {
+      text-shadow:
+        .25em 0 0 #000,
+        .5em 0 0 rgba(0,0,0,0);}
+    80%, 100% {
+      text-shadow:
+        .25em 0 0 #000,
+        .5em 0 0 #000;}}
+  

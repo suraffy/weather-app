@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather</title>
+        <link rel="icon" href="/img/icon_bar.png">
+        <link rel="stylesheet" type="text/css" href="/css/style.css"">
+    </head>
+
+    <body>
+        
+        <div class="main-content">
+
+            {{>header}}
+            <div class="body">
+
+                <h2>{{title}}</h2>
+                
+                <form>
+                    <input placeholder="Your Location">
+                    <button>Search</button>
+                </form>
+                
+                <div class="result">
+                    <p id="temperature"></p>
+                    <p id="description" class='no_desc_loading'></p>
+                    <p id="location"></p>
+                </div>
+
+                <div class="icon">
+                    <img id="weather_icon" class="weather-icon" src="/img/unknown_weather.png">
+                </div>
+
+
+            </div>
+
+        </div>
+        
+        {{>footer}}
+        
+        <script src="/js/app.js"></script>
+    </body>
+</html>
