@@ -24,7 +24,7 @@ weatherForm.addEventListener('submit', (e) => {
     locationPlace.textContent = '';
     weatherIcon.src = '/img/unknown_weather.png';
 
-    fetch('http://localhost:3000/weather?address=' + location).then((response) => {
+    fetch('/weather?address=' + location).then((response) => {
         response.json().then((data) => {
             if (data.error) {
                 descriptionPlace.textContent = '';
